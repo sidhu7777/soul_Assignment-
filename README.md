@@ -25,11 +25,21 @@ The dataset consists of two main sets for training and testing the model:
 
 ### Step 1: License Plate Detection
    - **Goal**: Detect and locate the license plates within vehicle images.
-   - **Approach**: Use an object detection model such as YOLO, Faster R-CNN, or SSD to predict bounding boxes around the license plates in the images.
+   - **Approach**: Use an object detection model such as YOLOV8, Faster R-CNN, or SSD to predict bounding boxes around the license plates in the images.
 
 ### Step 2: License Plate Character Recognition
    - **Goal**: Recognize the alphanumeric characters on the detected license plates.
-   - **Approach**: Use Optical Character Recognition (OCR) techniques like Tesseract, or deep learning models such as Convolutional Neural Networks (CNN) for text recognition.
+   - **Approach**: Use Optical Character Recognition (OCR) techniques like Tesseract, or deep learning models such as Convolutional Neural Networks (CNN),Easy ocr,paddle ocr, VITSTR for text recognition.
+     
+### Step 3 : Test Pipeline 
+
+   -**Goal**: Evaluate the full end-to-end system on unseen test data.
+
+   -**Approach**:
+
+            Use the trained license plate detection model (e.g., YOLOv8) to detect and crop license plates from new test images.
+
+            Pass the cropped plate images through the recognition model ( ViTSTR) to extract the alphanumeric text.
 
 ## Requirements
 
