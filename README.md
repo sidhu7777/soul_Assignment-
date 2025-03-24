@@ -36,9 +36,7 @@ The dataset consists of two main sets for training and testing the model:
    -**Goal**: Evaluate the full end-to-end system on unseen test data.
 
    -**Approach**:
-            - Use the trained license plate detection model (e.g., YOLOv8) to detect and crop license plates from new test images.
-
-            - Pass the cropped plate images through the recognition model ( ViTSTR) to extract the alphanumeric text.
+            - Use the trained license plate detection model (e.g., YOLOv8) to detect and crop license plates from new test images.Pass the cropped plate images through the recognition model ( ViTSTR) to extract the alphanumeric text.
 
 ## Requirements
 
